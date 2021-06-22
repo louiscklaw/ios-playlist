@@ -8,14 +8,15 @@ set -ex
 
 # 1=ipad6-portrait
 
+DEVICE_NAME=IPAD_6_14_2
 
-xcrun simctl shutdown $1 || true
-xcrun simctl erase $1 || true
+xcrun simctl shutdown $DEVICE_NAME || true
+xcrun simctl erase $DEVICE_NAME || true
 
-# xcrun simctl delete $1 || true
-# xcrun simctl create $1 com.apple.CoreSimulator.SimDeviceType.iPad--6th-generation-
+# xcrun simctl delete $DEVICE_NAME || true
+xcrun simctl create $DEVICE_NAME com.apple.CoreSimulator.SimDeviceType.iPad--6th-generation- com.apple.CoreSimulator.SimRuntime.iOS-14-2
 
-xcrun simctl boot $1
+xcrun simctl boot $DEVICE_NAME
 
 # sleep 30 && xcrun simctl openurl iPad-7th-generation https://meny-manage--meny-louis-tryout1-4g6dbpux.web.app
 # sleep 30 && xcrun simctl openurl iPad-6th-generation http://192.168.88.254:8002
