@@ -14,7 +14,7 @@ xcrun simctl create iPad-6th-generation com.apple.CoreSimulator.SimDeviceType.iP
 xcrun simctl boot iPad-6th-generation
 
 # sleep 30 && xcrun simctl openurl iPad-7th-generation https://meny-manage--meny-louis-tryout1-4g6dbpux.web.app
-sleep 30 && xcrun simctl openurl iPad-6th-generation http://192.168.88.254:8002
+# sleep 30 && xcrun simctl openurl iPad-6th-generation http://192.168.88.254:8002
 
 # xcrun simctl shutdown iPad-6th-generation
 # xcrun simctl erase iPad-6th-generation
