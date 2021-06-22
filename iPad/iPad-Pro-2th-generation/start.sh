@@ -14,7 +14,7 @@ xcrun simctl create iPad-Pro-2th-generation com.apple.CoreSimulator.SimDeviceTyp
 xcrun simctl boot iPad-Pro-2th-generation
 
 # sleep 30 && xcrun simctl openurl iPad-Pro-2th-generation https://meny-manage--meny-louis-tryout1-4g6dbpux.web.app
-sleep 30 && xcrun simctl openurl iPad-Pro-2th-generation http://192.168.88.254:8002
+sleep 60 && xcrun simctl openurl iPad-Pro-2th-generation http://192.168.88.254:8002
 
 # xcrun simctl shutdown iPad-Pro-2th-generation
 # xcrun simctl erase iPad-Pro-2th-generation
