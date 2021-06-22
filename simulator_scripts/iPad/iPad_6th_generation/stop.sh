@@ -6,6 +6,6 @@ set -ex
 
 # xcrun simctl list devicetypes |grep -i ipad
 
-xcrun simctl shutdown ＄1 || true
-xcrun simctl erase ＄1 || true
-xcrun simctl delete ＄1 || true
+xcrun simctl shutdown $1 || true
+xcrun simctl erase $1 || true
+xcrun simctl delete $1 || true
