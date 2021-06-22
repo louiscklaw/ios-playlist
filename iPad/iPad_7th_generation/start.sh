@@ -13,7 +13,7 @@ xcrun simctl delete iPad-7th-generation || true
 xcrun simctl create iPad-7th-generation com.apple.CoreSimulator.SimDeviceType.iPad--7th-generation-
 xcrun simctl boot iPad-7th-generation
 
-sleep 5 && xcrun simctl openurl iPad-7th-generation https://meny-manage--meny-louis-tryout1-4g6dbpux.web.app
+sleep 20 && xcrun simctl openurl iPad-7th-generation https://meny-manage--meny-louis-tryout1-4g6dbpux.web.app
 
 # xcrun simctl shutdown iPad-7th-generation
 # xcrun simctl erase iPad-7th-generation
