@@ -11,6 +11,7 @@ set -ex
 
 xcrun simctl shutdown $1 || true
 xcrun simctl erase $1 || true
+xcrun simctl install $1 /Users/logic/_workspace/Chromium.app || true
 
 # xcrun simctl delete $1 || true
 # xcrun simctl create $1 com.apple.CoreSimulator.SimDeviceType.iPad--6th-generation-
