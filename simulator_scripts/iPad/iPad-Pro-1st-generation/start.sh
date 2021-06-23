@@ -13,6 +13,8 @@ xcrun simctl delete iPad-Pro-1st-generation || true
 xcrun simctl create iPad-Pro-1st-generation com.apple.CoreSimulator.SimDeviceType.iPad-Pro--11-inch-
 xcrun simctl boot iPad-Pro-1st-generation
 
+
+
 # sleep 30 && xcrun simctl openurl iPad-Pro-1st-generation https://meny-manage--meny-louis-tryout1-4g6dbpux.web.app
 # sleep 60 && xcrun simctl openurl iPad-Pro-1st-generation http://192.168.88.254:8002
 
